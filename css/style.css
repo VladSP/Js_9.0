@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background: #6c6c6c url(../imgs/1.jpg) center center no-repeat;
+    min-width: 960px;
+    background-attachment: fixed;
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000;
+}
+.slider {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.slider .imgs {
+    text-align: center;
+    display: flex;
+    width: 720px;
+    height: 405px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider .buttons  {
+    text-align: center;
+}
+.slider .buttons button {
+    margin: 20px 50px 0;
+    width: 75px;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.slider .buttons button:active {
+    background-color: rgba(255,255,255,.5);
+}
+.slider .buttons .prev {
+    background: url(../imgs/slider/back.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider .buttons .next {
+    background: url(../imgs/slider/arrow.png) center center no-repeat;
+   background-size: cover;
+}
+
+.slider .imgs .current {
+    opacity: 1;
+}
+.slider .imgs img {
+    position: absolute;
+    opacity: 0;
+    transform: all .6s;
+    width: 720px;
+    height: 405px;
+}
